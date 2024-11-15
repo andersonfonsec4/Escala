@@ -1,0 +1,93 @@
+/* Estilos globais */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    color: green;
+    margin: 20px 0;
+}
+
+/* Container das tabelas */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Estilo das tabelas */
+.tabela-estilo {
+    width: 100%;
+    max-width: 800px;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background: #ffffff;
+}
+
+.tabela-estilo caption {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: green;
+    padding: 10px;
+    background-color: rgb(245, 252, 235);
+    border-bottom: 2px solid green;
+}
+
+.tabela-estilo th, 
+.tabela-estilo td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.tabela-estilo th {
+    background-color: #f0f4f8;
+    color: #4a4a4a;
+    font-weight: bold;
+}
+
+.tabela-estilo tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.tabela-estilo tr:hover {
+    background-color: #f0f8ff;
+}
+
+/* Responsividade */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .tabela-estilo {
+        font-size: 0.9rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .tabela-estilo th, 
+    .tabela-estilo td {
+        font-size: 0.8rem;
+        padding: 8px;
+    }
+
+    .tabela-estilo caption {
+        font-size: 1.2rem;
+    }
+}
+
